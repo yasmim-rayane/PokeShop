@@ -1,53 +1,103 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0px;
-    box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: #EBEBEB;
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
 }
 
 header {
-    background-color: rgb(71, 22, 22);
+  border: 1px solid rgba(255, 255, 255, 0.2078431373);
 }
-
-header div p {
-    color: #FAD61D;
-    font-size: 12px;
+header .search-icon {
+  color: rgba(255, 255, 255, 0.5843137255);
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 6px;
 }
-
-p {
-    margin: 0;
+header input {
+  color: rgba(255, 255, 255, 0.5843137255);
+  width: 320px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.2078431373);
+  background: #000106;
+  font-size: 0.9em;
 }
-
-.products div {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 15px;
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(223, 223, 223));
+header span {
+  color: #ffffff;
 }
-
-.products div:hover{
-    cursor: pointer;
-    transition: 0.4s;
-    -webkit-filter: drop-shadow(0px 0px 7px rgb(180, 180, 180));
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
 header a {
-    color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2078431373);
+  text-decoration: none;
+}
+header a:hover {
+  background: rgba(255, 255, 255, 0.1450980392);
 }
 
-header a:hover{
-    font-weight: bold;
+body {
+  background: #000106;
+}
+body .products div {
+  border: 1px solid rgba(255, 255, 255, 0.2078431373);
+  border-radius: 15px;
+  padding: 15px;
+}
+body .products div:hover {
+  cursor: pointer;
+}
+body .products div:hover .name-product {
+  text-decoration: underline;
+}
+body .products div .img-product {
+  background: #181818;
+}
+body .products div .container-product {
+  margin-top: 15px;
+}
+body .products div .container-product .name-product {
+  font-weight: 500;
+  padding-top: 20px;
+}
+body .products div .container-product .price-product {
+  font-size: 1.5em;
+}
+body .products div .container-product .soldout {
+  color: #888888;
+}
+body .products div .container-product .desc-product {
+  color: #FAD61D;
 }
 
-.sold {
-    color: #b8b8b8;
+a, p, h2 {
+  color: white;
 }
+
+footer {
+  font-size: 0.8em;
+}
+footer hr {
+  color: rgba(255, 255, 255, 0.2078431373);
+}
+footer a {
+  color: rgba(255, 255, 255, 0.2078431373);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #FAD61D;
+}
+
+/*# sourceMappingURL=style.css.map */

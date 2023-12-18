@@ -1,0 +1,76 @@
+$border: 1px solid #ffffff35
+
+html 
+    scroll-behavior: smooth
+::-webkit-scrollbar 
+    width: 7px
+::-webkit-scrollbar-track 
+    background: #1d1d1d
+::-webkit-scrollbar-thumb 
+    background: #888888
+    border-radius: 15px
+::-webkit-scrollbar-thumb:hover 
+    background: #fff
+
+header
+    border: $border
+    .search-icon
+        color: #ffffff95
+        position: absolute
+        margin-top: 6px
+        margin-left: 6px
+    input
+        color: #ffffff95
+        width: 320px
+        outline: none
+        border: $border
+        background: #000106
+        font-size: .9em
+    span
+        color: #ffffff
+    a
+        border: $border
+        text-decoration: none
+        &:hover
+            background: #ffffff25
+
+body
+    background: #000106
+    .products div
+        border: $border
+        border-radius: 15px
+        padding: 15px
+        &:hover
+            cursor: pointer
+            .name-product
+                text-decoration: underline
+
+        .img-product
+            background: #181818
+                
+        .container-product
+            margin-top: 15px
+
+            .name-product
+                font-weight: 500
+                padding-top: 20px
+            .price-product
+                font-size: 1.5em
+            .soldout
+                color: #888888
+            .desc-product
+                color: #FAD61D
+
+a, p, h2
+    color: white
+
+footer
+    font-size: .8em
+    hr
+        color: #ffffff35
+    a
+        color: #ffffff35
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+            color: #FAD61D
